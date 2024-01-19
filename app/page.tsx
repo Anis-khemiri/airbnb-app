@@ -14,6 +14,7 @@ export default function Home() {
           title='The Greatest Outdoors'
           desc='Wishlists curated by Airbnb'
           linkText='Get Inspired' />
+          
    </main>
   )
 }

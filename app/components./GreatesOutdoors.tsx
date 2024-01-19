@@ -10,7 +10,7 @@ type GreatestOutdoorsProps = {
 const GreatesOutdoors = ({img, title, desc, linkText}:GreatestOutdoorsProps) => {
   return (
     <section>
-      <div className='container relative cursor-pointer pt-6'>
+      <div className='container relative cursor-pointer pt-6 mb-6'>
         <div className='relative h-96 min-w-[300px]'>
           <Image
             src={img}
