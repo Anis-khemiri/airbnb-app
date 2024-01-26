@@ -4,7 +4,7 @@ import React from "react";
 import Searchbar from "./Searchbar";
 import Navbar from "./Navbar";
 
-export default function Header() {
+ const Header = ({ placeholder }:{placeholder?:string}) => {
   return (
     <header className="sticky top-0 z-50 bg-slate-200 shadow-md py-5 ">
       <div className="container grid grid-cols-3 relative">
@@ -17,9 +17,10 @@ export default function Header() {
             alt="logo-img"
           />
         </Link>
-        <Searchbar />
+        <Searchbar placeholder={placeholder} />
         <Navbar />
       </div>
     </header>
   );
 }
+export default Header;

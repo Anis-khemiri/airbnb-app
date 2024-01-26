@@ -5,7 +5,7 @@ import { SearchIcon, UsersIcon } from "@heroicons/react/solid";
 import { useState } from "react";
 import { DateRangePicker, RangeKeyDict } from "react-date-range";
 import Link from "next/link";
-function Searchbar() {
+function Searchbar({ placeholder }: { placeholder?: string }) {
   const [input, setInput] = useState("");
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -24,7 +24,7 @@ function Searchbar() {
       <div className="relative flex items-center justify-between md:border-2 rounded-full py-2 md:shadow-sm">
         <input
           type="text"
-          placeholder="Start your search"
+          placeholder={placeholder || "Start your search"}
           value={input}
           onChange={(e) => setInput(e.target.value)}
           className=" text-sm text-gray-600 placeholder-gray-400 flex-grow pl-5 bg-transparent outline-none"
