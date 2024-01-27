@@ -13,6 +13,10 @@
         -ms-overflow-style: none;/* IE and EDGE*/
         scrollbar-width: none;/*firefox*/
       }
+      .filter-btn{
+        @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 transition transform duration-100 ease-out;
+      
+      }
     }
     body {
       background-color: rgb(158, 166, 168);
